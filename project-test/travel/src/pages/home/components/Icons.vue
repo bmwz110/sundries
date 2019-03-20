@@ -112,6 +112,6 @@ export default {
       text-align: center
       color: $darkTextColor
       font-size: .24rem
-      // 下面三条实现文字过长时的省略效果
+      // ellipsis()实现文字过长时的省略效果,保存在mixins.styl中
       ellipsis()
 </style>
