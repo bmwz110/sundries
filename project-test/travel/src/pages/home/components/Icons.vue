@@ -21,7 +21,7 @@ export default {
       iconList: [{
         id: '0001',
         imgUrl: 'http://img1.qunarzz.com/piao/fusion/1803/95/f3dd6c383aeb3b02.png',
-        desc: '景点门票'
+        desc: '景点门票景点门票景点门票'
       }, {
         id: '0002',
         imgUrl: 'http://img1.qunarzz.com/piao/fusion/1804/5a/13ceb38dcf262f02.png',
@@ -63,7 +63,7 @@ export default {
   },
   computed: {
     pages () {
-      const pages =[]
+      const pages = []
       this.iconList.forEach((item, index) => {
         const page = Math.floor(index / 8)
         if (!pages[page]) {
@@ -79,6 +79,7 @@ export default {
 
 <style lang="stylus" scoped>
   @import '~styles/variables.styl'
+  @import '~styles/mixins.styl'
   .icons >>> .swiper-container
     height: 0
     padding-bottom: 50%
@@ -111,4 +112,6 @@ export default {
       text-align: center
       color: $darkTextColor
       font-size: .24rem
+      // 下面三条实现文字过长时的省略效果
+      ellipsis()
 </style>
