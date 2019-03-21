@@ -26,14 +26,14 @@ export default {
   },
   methods: {
     getHomeInfo () {
-      axios.get('/api/idnex.json').then(this.getHomeInfoSucc)
-      },
+      axios.get('/static/mock/index.json').then(this.getHomeInfoSucc)
+    },
     getHomeInfoSucc (res) {
       console.log(res)
     }
   },
   mounted () {
-    this.getHomeInfo
+    this.getHomeInfo()
   }
 }
 </script>
