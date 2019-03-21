@@ -10,6 +10,7 @@ module.exports = {
     // Paths
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
+    // webpack-dev-server提供路径重定向
     proxyTable: {
       '/api': {
         target: 'http://localhost:8080',
