@@ -17,20 +17,8 @@
 <script>
 export default {
   name: 'HomeRecommend',
-  data () {
-    return {
-      recommendList: [{
-        id: '0001',
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/1603/9a/9a44ea713b93140d90.water.jpg_200x200_dcf0f049.jpg',
-        title: '西溪国家湿地公园·周家村',
-        desc: '杭州西溪国家湿地公园'
-      }, {
-        id: '0002',
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/1603/9a/9a44ea713b93140d90.water.jpg_200x200_dcf0f049.jpg',
-        title: '西溪国家湿地公园·周家村',
-        desc: '杭州西溪国家湿地公园'
-      }]
-    }
+  props: {
+    recommendList: Array
   }
 }
 </script>

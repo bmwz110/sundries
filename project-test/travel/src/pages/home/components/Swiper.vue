@@ -1,6 +1,6 @@
 <template>
     <div class="wrapper">
-      <swiper :options="swiperOption">
+      <swiper :options="swiperOption" v-if="showSwiper">
         <swiper-slide v-for="item of list" :key="item.id">
           <img class="swiper-img" :src="item.imgUrl" />
         </swiper-slide>
@@ -21,6 +21,11 @@ export default {
         pagination: '.swiper-pagination', // pagination(分页)属性：.类名 --> 添加分页标志
         loop: true
       }
+    }
+  },
+  computed: {
+    showSwiper () {
+      return this.list.length
     }
   }
 }
