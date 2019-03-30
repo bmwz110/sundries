@@ -7,7 +7,7 @@
       <span class="iconfont">&#xe632;</span>
       输入城市/景点/游玩主题
     </div>
-    <router-link>
+    <router-link to="/city">
       <div class="header-right">
         {{this.city}}
         <span class="iconfont arrow-icon">&#xe64a;</span>
@@ -18,7 +18,7 @@
 
 <script>
 export default {
-  name: 'Header',
+  name: 'HomeHeader',
   props: {
     city: String
   }
@@ -52,6 +52,7 @@ export default {
     .header-right
       width: 1rem
       float: right
+      color: white
       .arrow-icon
         font-size: .2rem
 </style>
