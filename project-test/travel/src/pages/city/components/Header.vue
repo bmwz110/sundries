@@ -1,7 +1,9 @@
 <template>
   <div class="header">
     城市选择
-    <div class="iconfont header-icon">&#xe624;</div>
+    <router-link to="/">
+      <div class="iconfont header-icon">&#xe624;</div>
+    </router-link>
   </div>
 </template>
 
@@ -28,4 +30,5 @@ export default {
       width: .64rem
       text-align: center
       font-size: .4rem
+      color: #fff
 </style>
