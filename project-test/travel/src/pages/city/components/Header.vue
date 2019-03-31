@@ -14,7 +14,6 @@ export default {
 <style lang="stylus" scoped>
   @import '~styles/variables.styl'
   .header
-    position: relative
     overflow: hidden
     height: .86rem
     line-height: .86rem
@@ -23,7 +22,7 @@ export default {
     background: $bgColor
     font-size: .32rem
     .header-icon
-      position: absolute
+      position: fixed
       top: 0
       left: 0
       width: .64rem
