@@ -15,26 +15,26 @@
   <body>
     <script>
       function translate(str) {
-        var arr = str.split("");
-        switch (arr[0]) {
-          case "a":
-          case "e":
-          case "i":
-          case "o":
-          case "u":
-            arr.push("way").join("");
-            break;
-          default:
-            arr.push(arr[0]);
-            arr.shift();
-            arr.push("ay");
-            arr = arr.join("");
+        arr = str.split("");
+         for (var i = 0; i < arr.length; i++) {
+           if ("aeiou".indexOf(arr[i]) >= 0) {
+            if (i === 0) {
+              arr.push("way");
+              break;
+            } else {
+              for (var j = 0; j < i; j++) {
+                arr.push(arr[0]);
+                arr.shift(arr[0]);
+              }
+              arr.push("ay");
+              break;
+            }
+          }
         }
-        
-        return arr;
+        return arr.join("");
       }
 
-      translate("consonant");
+      translate("algorithm");
     </script>
   </body>
 </html>
