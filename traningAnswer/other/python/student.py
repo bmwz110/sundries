@@ -6,6 +6,7 @@ class Student(Human):
     super(Student, self).__init__(name, age)
 
   def do_homework(self):
+    super(Student, self).get_name()
     print('English homework')
 
 student1 = Student('人民路小学','小明', 18)
