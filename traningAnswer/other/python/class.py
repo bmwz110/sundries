@@ -17,7 +17,7 @@ class Student():
   def plus_sum(cls):
     print(cls.sum)
 
-  # 定态方法
+  # 静态方法
   @staticmethod
   def add(x, y):
     print(Student.sum)
